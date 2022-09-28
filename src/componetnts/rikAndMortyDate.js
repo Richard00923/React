@@ -1,7 +1,7 @@
 import {useState} from "react";
 
 export default function RikAndMorty() {
-    let [charecter, setcherecter] = useState([])
+    let [charecter, setcherecter] = useState( [])
 
 
     fetch(`https://rickandmortyapi.com/api/character`)
