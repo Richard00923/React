@@ -1,4 +1,4 @@
-import {useState} from "react";
+import {useEffect, useState} from "react";
 
 export default function RikAndMorty() {
     let [charecter, setcherecter] = useState( [])
@@ -19,3 +19,4 @@ export default function RikAndMorty() {
         </div>})
     )
 }
+
