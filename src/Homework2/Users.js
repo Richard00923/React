@@ -18,10 +18,10 @@ export default function Hm2() {
 
 
     return(<div>
-        <div>{user.id}</div>
-        <div>{user.name}</div>
-        <div>{user.username}</div>
-        <div>{user.email}</div>
+        <div>{user?.id}</div>
+        <div>{user?.name}</div>
+        <div>{user?.username}</div>
+        <div>{user?.email}</div>
         {character.map(value => (<User user= {value} key={value.id} lift ={lift}/>))}
 
     </div>)
