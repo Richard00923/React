@@ -1,10 +1,11 @@
 import './App.css';
 
 import Test from "./componetnts/User";
+import Users from "./componetnts/Users";
 
 function App() {
     return (
-        <Test/>
+        <Users/>
     );
 }
 
