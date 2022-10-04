@@ -1,6 +1,11 @@
-import axios from "axios";
-import {useState} from "react";
+export default function User(props) {
+    let {user, lift} = props;
 
-let axiosInstance = axios.create({
-    baseURL: 'https://jsonplaceholder.typicode.com/users/',
-});
+    return <div>
+        <h2>{user.id} - {user.name}</h2>
+        <button onClick={() => {
+            lift(user)
+        }}>details
+        </button>
+    </div>
+}
