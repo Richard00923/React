@@ -1,12 +1,9 @@
 import './App.css';
-
-import Test from "./componetnts/User";
-import Users from "./componetnts/Users";
-import Hm2 from "./componetnts/Test";
+import Cars from "./components/Cars/Cars";
 
 function App() {
     return (
-        <Hm2/>
+        <Cars/>
     );
 }
 
