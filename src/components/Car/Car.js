@@ -1,6 +1,10 @@
 import React from 'react';
 import css from './Car.module.css'
-const Car = ({car}) => {
+import {carService} from "../../service";
+import async from "async";
+
+
+const Car = ({car,setCars,setCarUpdate}) => {
     const {id, model, price, year} = car;
     return (
         <div className={css.Car}>
@@ -11,8 +15,15 @@ const Car = ({car}) => {
                 <div>year:{year}</div>
             </div>
             <div className={css.tools}>
-                <button>Update</button>
-                <button>Delete</button>
+                <button onClick={()=>{
+                    setCarUpdate(car)
+                }
+                }>Update</button>
+                <button onClick={async ()=>{await carService.deleteById(id);
+                    carService.getAll().then(({data})=>{setCars(data);});
+
+                    }
+                }>Delete</button>
 
             </div>
         </div>
