@@ -1,9 +1,10 @@
 import './App.css';
-import Cars from "./components/Cars/Cars";
+import {Start} from "./components/axios";
+
 
 function App() {
     return (
-        <Cars/>
+        <Start/>
     );
 }
 
